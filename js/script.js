@@ -163,7 +163,7 @@ function sendEmail(event) {
       Username : "karimthedream254@gmail.com",
       Password : "B860726569C04551D7562F3DECB4D5505E10",
       From: email,
-      To: "follextech@gmail.com",
+      To: "cakeskenya.254@gmail.com",
     
       Subject: subject,
       Body: "Name: " + name + "<br>Email: " + email2 + "<br>Message: " + message,
