@@ -76,13 +76,13 @@ const pizzas = [
 ];
 const weddingcakes = [
     { name: "Wedding Cake 1", price: "Order for price", image: "img/Wedding/cake1.jpg" },
-    { name: "Wedding Cake 2", price: "3500 KSH", image: "img/Wedding/cake2.jpg" },
-    { name: "Wedding Cake 3", price: "4000 KSH", image: "img/Wedding/cake3.jpg" },
-    { name: "Wedding Cake 4", price: "3200 KSH", image: "img/Wedding/cake4.jpg" },
-    { name: "Wedding Cake 5", price: "3800 KSH", image: "img/Wedding/cake5.jpg" },
-    { name: "Wedding Cake 6", price: "3100 KSH", image: "img/Wedding/cake6.jpg" },
-    { name: "Wedding Cake 7", price: "3600 KSH", image: "img/Wedding/cake7.jpg" },
-    { name: "Wedding Cake 8", price: "3400 KSH", image: "img/Wedding/cake8.jpg" }
+    { name: "Wedding Cake 2", price: "Order for price", image: "img/Wedding/cake2.jpg" },
+    { name: "Wedding Cake 3", price: "Order for price", image: "img/Wedding/cake3.jpg" },
+    { name: "Wedding Cake 4", price: "Order for price", image: "img/Wedding/cake4.jpg" },
+    { name: "Wedding Cake 5", price: "Order for price", image: "img/Wedding/cake5.jpg" },
+    { name: "Wedding Cake 6", price: "Order for price", image: "img/Wedding/cake6.jpg" },
+    { name: "Wedding Cake 7", price: "Order for price", image: "img/Wedding/cake7.jpg" },
+    { name: "Wedding Cake 8", price: "Order for price", image: "img/Wedding/cake8.jpg" }
     // Add more wedding cakes as needed
 ];
 
