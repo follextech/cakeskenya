@@ -75,7 +75,7 @@ const pizzas = [
     // Add more pizza products as needed
 ];
 const weddingcakes = [
-    { name: "Wedding Cake 1", price: "3000 KSH", image: "img/Wedding/cake1.jpg" },
+    { name: "Wedding Cake 1", price: "Order for price", image: "img/Wedding/cake1.jpg" },
     { name: "Wedding Cake 2", price: "3500 KSH", image: "img/Wedding/cake2.jpg" },
     { name: "Wedding Cake 3", price: "4000 KSH", image: "img/Wedding/cake3.jpg" },
     { name: "Wedding Cake 4", price: "3200 KSH", image: "img/Wedding/cake4.jpg" },
