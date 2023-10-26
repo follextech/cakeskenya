@@ -32,7 +32,7 @@ const queencakes = [
 ];
 const birthdaycakes = [
     { name: "Birthday Cake with White Vanilla Frosting", price: "1500 KSH", image: "img/Birthday/cake1.jpg" },
-    { name: "Pineapple White Forest", price: "1600 KSH", image: "img/Birthday/cake2.jpg" },
+    { name: "Pineapple White Forest", price: "1800 KSH", image: "img/Birthday/cake2.jpg" },
     { name: "Black Forest1", price: "1800 KSH", image: "img/Birthday/cake3.jpg" },
     { name: "Black Forest2", price: "1800 KSH", image: "img/Birthday/cake4.jpg" },
     { name: "Vanilla Cake", price: "1700 KSH", image: "img/Birthday/cake5.jpg" },
