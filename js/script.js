@@ -32,16 +32,16 @@ const queencakes = [
 ];
 const birthdaycakes = [
     { name: "Birthday Cake with White Vanilla Frosting", price: "1500 KSH", image: "img/Birthday/cake1.jpg" },
-    { name: "Pineapple White Forest", price: "1200 KSH", image: "img/Birthday/cake2.jpg" },
+    { name: "Pineapple White Forest", price: "1600 KSH", image: "img/Birthday/cake2.jpg" },
     { name: "Black Forest1", price: "1800 KSH", image: "img/Birthday/cake3.jpg" },
-    { name: "Black Forest2", price: "1300 KSH", image: "img/Birthday/cake4.jpg" },
-    { name: "Vanilla Cake", price: "1600 KSH", image: "img/Birthday/cake5.jpg" },
-    { name: "Choclate Cake1", price: "1100 KSH", image: "img/Birthday/cake6.jpg" },
-    { name: "Choclate Cake2", price: "1400 KSH", image: "img/Birthday/cake7.jpg" },
+    { name: "Black Forest2", price: "1800 KSH", image: "img/Birthday/cake4.jpg" },
+    { name: "Vanilla Cake", price: "1700 KSH", image: "img/Birthday/cake5.jpg" },
+    { name: "Choclate Cake1", price: "1800 KSH", image: "img/Birthday/cake6.jpg" },
+    { name: "Choclate Cake2", price: "1700 KSH", image: "img/Birthday/cake7.jpg" },
     { name: "Black Forest3", price: "1700 KSH", image: "img/Birthday/cake8.jpg" },
     { name: "Red Velvate Cake1", price: "1900 KSH", image: "img/Birthday/cake9.jpg" },
-    { name: "Red Velvate2", price: "2000 KSH", image: "img/Birthday/cake10.jpg" },
-    { name: "Red Velvate3", price: "1250 KSH", image: "img/Birthday/cake11.jpg" }
+    { name: "Red Velvate2", price: "2500 KSH", image: "img/Birthday/cake10.jpg" },
+    { name: "Red Velvate3", price: "1750 KSH", image: "img/Birthday/cake11.jpg" }
     // Add more birthday cakes as needed
 ];
 
