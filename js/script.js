@@ -160,8 +160,8 @@ function sendEmail(event) {
   
     Email.send({
       Host : "smtp.elasticemail.com",
-      Username : "karimthedream254@gmail.com",
-      Password : "B860726569C04551D7562F3DECB4D5505E10",
+      Username : "follextech@gmail.com",
+      Password : "9D80BDA5DA276BD11EC885FB89424C524E10",
       From: email,
       To: "cakeskenya.254@gmail.com",
     
