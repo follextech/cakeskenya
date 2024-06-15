@@ -14,6 +14,7 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
 
             // Log the JSON string
             console.log(jsonString);
+  console.log("dd")
 
  /* fetch('https://formsubmit.co/6c6a01e95c660b0223a57c443b5e9e92', {
     method: 'POST',
