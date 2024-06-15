@@ -1,6 +1,6 @@
 document.getElementById('contactForm').addEventListener('submit', function(e) {
   e.preventDefault();
-
+var form = event.target
 var name = document.getElementById('name').value;
             var email = document.getElementById('email').value;
             var subject = document.getElementById('subject').value;
