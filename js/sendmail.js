@@ -3,6 +3,7 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
 
   var form = e.target;
   var formData = new FormData(form);
+  console.log(formData)
 
   fetch('https://formsubmit.co/6c6a01e95c660b0223a57c443b5e9e92', {
     method: 'POST',
