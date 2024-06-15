@@ -141,7 +141,7 @@
             <div class="row g-0 justify-content-center">
                 <div class="col-lg-8 wow fadeInUp" data-wow-delay="0.1s">
                     <p class="text-center mb-4">Order with us</p>
-                    <form>
+                    <form id="contactForm">
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <div class="form-floating">
@@ -167,13 +167,12 @@
                                     <label for="message">Message</label>
                                 </div>
                             </div>
-                            <div class="col-12 message" style="display: none;">
-               
-                <div class="error-message"></div>
-                <div class="sent-message" style="display: block;">Your message has been sent. Thank you!</div>
-                  </div>
+                       <div class="col-12 message">
+  <div class="error-message" style="display: none;"></div>
+  <div class="sent-message" style="display: none;">Your message has been sent. Thank you!</div>
+</div>
                             <div class="col-12 text-center">
-                                <button class="btn btn-primary rounded-pill py-3 px-5" onclick="sendEmail(event)">Send Message</button>
+                                <button class="btn btn-primary rounded-pill py-3 px-5">Send Message</button>
                             </div>
                         </div>
                     </form>
