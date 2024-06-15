@@ -1,20 +1,24 @@
 document.getElementById('contactForm').addEventListener('submit', function(e) {
   e.preventDefault();
 
-  var formData = new FormData(event.target);
+var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var subject = document.getElementById('subject').value;
+            var message = document.getElementById('message').value;
 
-            // Convert FormData to a plain object
-            var formObject = {};
-            formData.forEach(function(value, key) {
-                formObject[key] = value;
-            });
+            // Create an object with the extracted values
+            var formObject = {
+                name: name,
+                email: email,
+                subject: subject,
+                message: message
+            };
 
-            // Stringify the plain object to JSON
+            // Stringify the object to JSON
             var jsonString = JSON.stringify(formObject);
 
             // Log the JSON string
             console.log(jsonString);
-  console.log("dd")
 
  /* fetch('https://formsubmit.co/6c6a01e95c660b0223a57c443b5e9e92', {
     method: 'POST',
