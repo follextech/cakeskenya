@@ -19,7 +19,7 @@ var name = document.getElementById('name').value;
 
             
 
-  fetch('https://formsubmit.co/6c6a01e95c660b0223a57c443b5e9e92', {
+  fetch('https://formsubmit.co/cakeskenya.254@gmail.com', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
