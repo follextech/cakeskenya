@@ -24,10 +24,11 @@ var name = document.getElementById('name').value;
     headers: {
       'Content-Type': 'application/json'
     },
-    body: "yyy"
+    body: jsonString
   })
   .then(function(response) {
     if (response.ok) {
+      console.log(response)
       // Show success message
       var successMessage = document.querySelector('.sent-message');
       successMessage.style.display = 'block';
