@@ -3,9 +3,9 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
 
   var form = e.target;
   var formData = new FormData(form);
-  console.log(formData)
+  console.log(form)
 
-  fetch('https://formsubmit.co/6c6a01e95c660b0223a57c443b5e9e92', {
+ /* fetch('https://formsubmit.co/6c6a01e95c660b0223a57c443b5e9e92', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
@@ -48,5 +48,5 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
     setTimeout(function() {
       errorMessage.style.display = 'none';
     }, 5000);
-  });
+  });*/
 });
