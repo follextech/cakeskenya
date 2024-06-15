@@ -1,9 +1,19 @@
 document.getElementById('contactForm').addEventListener('submit', function(e) {
   e.preventDefault();
 
-  var form = e.target;
-  var formData = new FormData(form);
-  console.log(JSON.stringify(Object.fromEntries(formData)))
+  var formData = new FormData(event.target);
+
+            // Convert FormData to a plain object
+            var formObject = {};
+            formData.forEach(function(value, key) {
+                formObject[key] = value;
+            });
+
+            // Stringify the plain object to JSON
+            var jsonString = JSON.stringify(formObject);
+
+            // Log the JSON string
+            console.log(jsonString);
 
  /* fetch('https://formsubmit.co/6c6a01e95c660b0223a57c443b5e9e92', {
     method: 'POST',
