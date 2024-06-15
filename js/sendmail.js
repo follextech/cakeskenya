@@ -24,7 +24,7 @@ var name = document.getElementById('name').value;
     headers: {
       'Content-Type': 'application/json'
     },
-    body: jsonString
+    body: "yyy"
   })
   .then(function(response) {
     if (response.ok) {
