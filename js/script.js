@@ -142,44 +142,55 @@ renderProductGrid("product-grid-bread",breads);
 renderProductGrid("product-grid-cookies",cookies);
 renderProductGrid("product-grid-wedding",weddingcakes);
 renderProductGrid("product-grid-pizza",pizzas);
-function sendEmail(event) {
-    event.preventDefault();
-    let name = document.getElementById("name").value;
-    let email = "karimthedream254@gmail.com"
-    let email2 = document.getElementById("email").value;
-    let subject = document.getElementById("subject").value;
-    let message = document.getElementById("message").value;
-    var toast = document.querySelector('.toast');
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+  e.preventDefault();
 
-    // Get the toast body element
-    var toastBody = toast.querySelector('.toast-body');
+  var form = e.target;
+  var formData = new FormData(form);
 
-    // Set the message in the toast body
-   
-    console.log("dasd")
-  
-    Email.send({
-      Host : "smtp.elasticemail.com",
-    Username : "karimthedream254@gmail.com",
-      Password : "B860726569C04551D7562F3DECB4D5505E10",
-      From: email,
-      To: "cakeskenya.254@gmail.com",
+  fetch('https://formsubmit.co/your-email@example.com', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(Object.fromEntries(formData))
+  })
+  .then(function(response) {
+    if (response.ok) {
+      // Show success message
+      var successMessage = document.querySelector('.sent-message');
+      successMessage.style.display = 'block';
+      
+      // Hide the success message after 5 seconds
+      setTimeout(function() {
+        successMessage.style.display = 'none';
+      }, 5000);
+
+      form.reset();
+    } else {
+      // Show error message
+      var errorMessage = document.querySelector('.error-message');
+      errorMessage.textContent = 'An error occurred. Please try again.';
+      errorMessage.style.display = 'block';
+      
+      // Hide the error message after 5 seconds
+      setTimeout(function() {
+        errorMessage.style.display = 'none';
+      }, 5000);
+    }
+  })
+  .catch(function(error) {
+    console.error('Error:', error);
     
-      Subject: subject,
-      Body: "Name: " + name + "<br>Email: " + email2 + "<br>Message: " + message,
-    }).then(
-      function (response) {
-        if (response === "OK") {
-          document.querySelector(".message").style.display = "block";
-          document.querySelector(".sent-message").style.display = "block";
-        } else {
-          throw new Error("Error: " + response);
-        }
-      },
-      function (error) {
-        document.querySelector(".error-message").style.display = "block";
-        console.log(error);
-      }
-    );
-  }
+    // Show error message
+    var errorMessage = document.querySelector('.error-message');
+    errorMessage.textContent = 'An error occurred. Please try again.';
+    errorMessage.style.display = 'block';
+    
+    // Hide the error message after 5 seconds
+    setTimeout(function() {
+      errorMessage.style.display = 'none';
+    }, 5000);
+  });
+});
 
