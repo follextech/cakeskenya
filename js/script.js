@@ -148,7 +148,7 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
   var form = e.target;
   var formData = new FormData(form);
 
-  fetch('https://formsubmit.co/your-email@example.com', {
+  fetch('https://formsubmit.co/markbosirekenyariri@gmail.com', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
