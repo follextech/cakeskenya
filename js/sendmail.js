@@ -8,6 +8,7 @@ var name = document.getElementById('name').value;
 
             // Create an object with the extracted values
             var formObject = {
+                access_key: "9e484a3d-976a-48bb-a70d-a220af697a38",
                 name: name,
                 email: email,
                 subject: subject,
@@ -19,7 +20,7 @@ var name = document.getElementById('name').value;
 
             
 
-  fetch('https://formsubmit.co/cakeskenya.254@gmail.com', {
+  fetch('https://api.web3forms.com/submit', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
