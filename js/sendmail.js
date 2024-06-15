@@ -17,15 +17,14 @@ var name = document.getElementById('name').value;
             // Stringify the object to JSON
             var jsonString = JSON.stringify(formObject);
 
-            // Log the JSON string
-            console.log(jsonString);
+            
 
- /* fetch('https://formsubmit.co/6c6a01e95c660b0223a57c443b5e9e92', {
+  fetch('https://formsubmit.co/6c6a01e95c660b0223a57c443b5e9e92', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
     },
-    body: JSON.stringify(Object.fromEntries(formData))
+    body: jsonString
   })
   .then(function(response) {
     if (response.ok) {
@@ -63,5 +62,5 @@ var name = document.getElementById('name').value;
     setTimeout(function() {
       errorMessage.style.display = 'none';
     }, 5000);
-  });*/
+  });
 });
